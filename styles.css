@@ -1,0 +1,372 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+/* Header section*/
+
+:root{
+    --bgcolor:purple;
+    --text:white;
+}
+header {
+    background-color :var(--bgcolor);
+    color:var(--text);    
+}
+header .top h3 i{
+    margin-right:10px;
+}
+header .top h3 i:hover{
+    color:var(--bgcolor);
+    text-shadow: -2px -2px white, 2px 2px white;
+}
+ header .top button{
+    border:2px solid purple;
+    border-radius: 8px;
+    padding:4px;
+    background-color:var(--text);;
+    color:var(--bgcolor);;
+}
+header .top button:hover{
+    background-color: var(--bgcolor);
+    color:var(--text);
+    border:2px solid white;
+}
+
+/* Nav section*/
+nav .nav{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+.pos {
+    position: sticky !important;
+    top: 0;
+    z-index: 5;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+        }
+nav div a span{
+    color:var(--bgcolor);
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a:hover  {
+    background-color:var(--bgcolor);
+    border-radius: 10px;
+    color:var(--text) !important;
+    text-decoration: none;
+}
+nav li ul a:hover{
+    color:var(--bgcolor) !important;
+}
+nav div>ul>li:last-child a{
+    background-color: var(--bgcolor);
+    color:var(--text) !important;
+    border:2px solid purple;
+    border-radius: 10px;
+}
+nav div>ul>li:last-child a:hover {
+    background-color:var(--text);
+    color:var(--bgcolor) !important;
+    border-radius: 10px;
+}
+/*Display section*/
+
+.display {
+    width:100wh;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation:slide 10s ease-in alternate;
+    animation-iteration-count: infinite;
+    transition: all 5s;
+}
+.display img{
+    width:800px;
+    height:500px;
+    overflow: hidden;
+
+}
+@keyframes slide {
+    0%{
+        left:00%;
+
+    }
+    25%{
+        left:-25%;
+    }
+    50%{
+        left:-50%;
+    }
+    75%{
+        left:-65%;
+    }
+    100%{
+        left:-80%;
+    }
+   
+}
+@media only screen and (max-width:750px){
+    .display{
+        flex-direction:column;
+        animation:none;
+    
+    }
+    .display img{
+        width:300px;
+        height:300px;
+        overflow: hidden;
+    
+    }
+}
+
+/* about section*/
+
+#about .row {
+    padding: 20px;
+}
+#about .row .col-lg-4{
+    clip-path: polygon(71% 22%, 100% 50%, 70% 79%, 0% 100%, 25% 50%, 0% 0%);
+
+}
+#about .row .col-lg-8{
+    line-height:2;
+    h2{
+        color:var(--bgcolor);
+    }
+
+}
+
+/* Our services section*/
+
+#ourservices {
+    background-color: var(--bgcolor);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ourservices .rbox{
+    width:80%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ourservices .rbox .box{
+    width:200px;
+    height:200px;
+    border: 3px solid purple;
+    border-radius: 10px;
+    background-color:var(--text);
+    color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+#ourservices .rbox .box i{
+    background-color: var(--bgcolor);
+    color: var(--text);
+    border-radius: 50%;
+    border:2px solid white;
+    padding: 10px;
+    margin:15px 0 0 10px;
+
+}
+#ourservices .rbox .box h3{
+    font-size:20px;
+    align-content: end;
+}
+#ourservices .rbox .box:hover{
+    background-color: var(--bgcolor);
+    color:var(--text);
+    transform: scale(1.1);
+    transition: all 1s;
+    border:2px solid white;
+}
+/*Treatment section*/
+
+#treatment {
+    background-color: rgba(139, 138, 138,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#treatment .row .col-lg-10 h2{
+    color:var(--bgcolor);
+}
+#treatment .row .col-lg-2 button{
+    border:2px solid white;
+    border-radius: 5px;
+    background-color: var(--bgcolor);
+    color:var(--text);
+    padding:4px 10px;
+    align-self: end;
+}
+#treatment .row .col-lg-2 button:hover{
+    background-color: var(--text);
+    color:var(--bgcolor)
+}
+#treatment .rbox{
+    width:80%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#treatment .rbox .box{
+    width:200px;
+    height:200px;
+    border: 3px solid purple;
+    border-radius: 10px;
+    background-color:var(--text);
+    color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+#treatment .rbox .box i{
+    background-color: rgba(139, 138, 138,0.5);
+    color: var(--bgcolor);
+    border-radius: 50%;
+    border:2px solid white;
+    padding: 10px;
+    margin:15px 0 0 10px;
+
+}
+#treatment .rbox .box h3{
+    font-size:20px;
+    align-content: end;
+}
+#treatment .rbox .box:hover{
+    background-color: var(--bgcolor);
+    color:var(--text);
+    border:2px solid white;
+}
+#treatment .rbox .box:hover i{
+    color:var(--text)
+}
+/*Specialities*/
+
+#specialities .row .col-lg-7 button{
+    background-color: var(--bgcolor);
+    color:var(--text);
+    padding:5px 10px;
+    margin-top:10px;
+    border:2px solid purple;
+    transition: all 1s;
+
+}
+#specialities .row .col-lg-7 button:hover i{
+    position:relative;
+    right:-40px;
+    color:var(--bgcolor);
+    transform: scaleX(1.5);
+
+}
+#specialities .row .col-lg-7 button:hover{
+    transform: scale(1.1);
+}
+
+/*Footer section*/
+
+footer {
+    background-color:var(--bgcolor);
+    color:var(--text);
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+}
+#contactus .col-lg-3 h2{
+    text-decoration: wavy;
+    padding-bottom: 10px;
+}
+#contactus .col-lg-3 ul{
+    list-style:  none;
+
+}
+#contactus .col-lg-3 ul a{
+    text-decoration: none;
+    color:var(--text);
+}
+#contactus #contact i{
+    color:var(--text);
+    font-size:20px;
+    margin-right:15px;
+}
+#contactus .social-icons i{
+    font-size:20px;
+    margin-right:15px;
+    color:var(--text);
+}
+
+/*----------------------------cardiology section-------------------------*/
+.paedia{
+    width:100vw;
+    height:100vh;
+}
+.paedia h1{
+    background-color: var(--bgcolor);
+    color: var(--text);
+    padding: 10px;
+    text-align: center  ;
+}
+
+/*----------------------------cardiology section-------------------------*/
+.cardio{
+    width:100vw;
+    height:100vh;
+}
+.cardio h1{
+    background-color: var(--bgcolor);
+    color: var(--text);
+    padding: 10px;
+    text-align: center  ;
+}
+.overview .col-lg-5{
+    border-radius: 10px;
+}
+.overview .col-lg-5 img{
+    border-radius: 20px;
+}
+
+.form{
+    background-color: rgb(202, 201, 201);
+}
+.form .row .col-lg-5:first-child{
+    background-color: var(--text);
+    padding:25px;
+    border-radius: 10px;
+}
+.form input{
+    width:100%;
+    border:2px solid grey;
+    padding:8px;
+    margin:8px;
+    background-color: var(--text);
+    border-radius: 5px;
+}
+.form button{
+    border:2px solid purple;
+    padding:8px 15px;
+    margin:8px;
+    background-color: var(--bgcolor);
+    border-radius: 8px;
+    color:var(--text);
+}
+

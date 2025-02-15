@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="https://kit.fontawesome.com/9651555ed0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--header section-->
+    <header>
+        <div class="top d-flex justify-content-between mx-4 py-3 align-items-center  text-white">
+            <h3 class="fs-4 m-2"><i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-paper-plane"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </h3>
+            <button type="submit" class="px-4 py-2"> For Emergency <span class="ms-2"><i class="fa-solid fa-phone"></i>
+                    +91 87674 32089</span></button>
+        </div>
+
+
+    </header>
+
+    <!-- Nav bar-->
+    <nav class="navbar pos navbar-expand-lg navbar-light bg-light py-2">
+        <div class="container-fluid mx-4 nav">
+            <div class="d-flex justify-content-between align-items-center w-100vw">
+                <a class="navbar-brand fs-2 " href="#">GK <span>hospital</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ourservices">Our services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specialities">Specialities</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            we support
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./pediatrics.html">Pediatrics</a></li>
+                            <li><a class="dropdown-item" href="./orthopedics.html">Orthopedia</a></li>
+                            <li><a class="dropdown-item" href="./cardio.html">Cardiology</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Book an Appointment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Display section-->
+
+    <section class="display gap-4 ">
+        <img src="./lab1.jpg" alt="" width="100%" height="100%">
+        <img src="./lab2.jpg" alt="" width="100%" height="100%">
+        <img src="./lab3.jpg" alt="" width="100%" height="100%">
+        <img src="./lab4.jpg" alt="" width="100%" height="100%">
+    </section>
+
+    <!--about section-->
+
+    <section id="about">
+        <div class="row m-4 ">
+            <div class="col-lg-4 ">
+                <img src="./hos.jpg" alt="" width="100%" height="100%">
+            </div>
+            <div class="col-lg-8">
+                <h2 class="fs-2 ">About Our Hospital</h2>
+                <p>Welcome to our esteemed hospital, where we offer top-notch medical care and services.
+                    We strive to combine state-of-the-art medical treatments, empathetic care, and a patient-centered
+                    approach, envisioning a world where individuals can experience life’s possibilities. At SRM Global
+                    Hospitals Pvt Ltd, we place the well-being of our patients and their families at the forefront,
+                    nurturing open communication and providing personalised attention
+                </p>
+                <p>We welcome patients from around the globe, Our multidisciplinary approach involves a team of medical
+                    professionals working collaboratively to provide accurate diagnoses and tailored treatment plans.
+
+                    In addition to medical care, we offer assistance with travel arrangements, accommodation, language
+                    interpretation, and other logistical needs. Choose GK Hospitals Pvt Ltd for international
+                    patient care that combines expertise, compassion, and personalized attention.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Our services-->
+    <section id="ourservices" class="container-fluid px-5 py-5 ">
+        <div class="row rbox gap-4">
+            <div class=" col-lg-3 box">
+                <h1><i class="fa-solid fa-user-doctor"></i> </h1>
+                <h3> Find Doctors</h3>
+            </div>
+            <div class=" col-lg-3 box">
+                <h1><i class="fa-solid fa-list-check"></i> </h1>
+                <h3> Health Checkup</h3>
+            </div>
+            <div class=" col-lg-3 box">
+                <h1><i class="fa-regular fa-calendar-check"></i> </h1>
+                <h3> Book Appointment</h3>
+            </div>
+            <div class="col-lg-3 box">
+                <h1><i class="fa-solid fa-hand-holding-heart"></i> </h1>
+                <h3> Services</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--Treatments-->
+    <section id="treatment" class="container-fluid">
+        <div class="row m-4">
+            <div class="col-lg-10">
+                <h4>Services and Treatments</h4>
+                <h2>10+ Specialities and comprehensive health care services</h2>
+            </div>
+            <div class="col-lg-2">
+                <button>See all services</button>
+            </div>
+        </div>
+        <div class="row rbox m-4 gap-4">
+            <div class=" col-lg-3 box">
+                <h1><i class="fa-solid fa-hands-holding-child"></i> </h1>
+                <h3> Orthopedics</h3>
+            </div>
+            <div class=" col-lg-3 box">
+                <h1><i class="fa-solid fa-brain"></i> </h1>
+                <h3> NeuroSurgery</h3>
+            </div>
+            <div class=" col-lg-3 box">
+                <h1><i class="fa-solid fa-venus"></i> </h1>
+                <h3> Gynacology</h3>
+            </div>
+            <div class="col-lg-3 box">
+                <h1><i class="fa-regular fa-eye"></i></h1>
+                <h3> Opthalmalogy</h3>
+            </div>
+        </div>
+        <img src="./help 247.png" alt="" width="100%" height="100%">
+    </section>
+
+    <!--Specialities section-->
+    <section id="specialities" class="container">
+        <div class="row m-5">
+            <div class="col-lg-5">
+                <img src="./pic1.png" alt="" width="100%" height="100%">
+            </div>
+            <div class="col-lg-7">
+                <h2 class="fs-2 mb-3">Patient Centric Care beyond Expectations</h2>
+                <p>Discover exceptional patient care with utmost comfort at SRM Global Hospitals Pvt Ltd, where we
+                    specialize in treating patients with complex or rare conditions.</p>
+
+                <p>With a focus on smooth and seamless procedures, we ensure that every aspect of your journey is
+                    effortless. Our commitment to cleanliness and maintenance ensures a hygienic and pleasant stay. Your
+                    comfort, well-being, and safety are our top priorities at GK Hospitals Pvt Ltd</p>
+                <button>Learn more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-lg-7">
+                <h2 class="fs-2 mb-3">International Patient Care</h2>
+                <p>At GK Hospitals Pvt Ltd, we take pride in being an international destination for the world’s
+                    best medical care. We welcome patients from around the globe, Our multidisciplinary approach
+                    involves a team of medical professionals working collaboratively to provide accurate diagnoses and
+                    tailored treatment plans.</p>
+
+                <p> In addition to medical care, we offer assistance with travel arrangements, accommodation, language
+                    interpretation, and other logistical needs. Choose SRM Global Hospitals Pvt Ltd for international
+                    patient care that combines expertise, compassion, and personalized attention
+                </p>
+                <button>Learn more <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="col-lg-5">
+                <img src="./pic2.png" alt="" width="100%" height="100%">
+            </div>
+        </div>
+    </section>
+
+    <!--footer section-->
+    <footer id="contactus" class="container-fluid p-5">
+        <div class="row ">
+            <div class="col-lg-3">
+                <h1 class="fs-3 mb-3">GK HOSPITALS <br> <small>live your life</small></h1>
+                <p>GK Hospitals Pvt Ltd strives to deliver exceptional patient care with world-class expertise supported
+                    by next-gen medical and digital technologies because you deserve the quality care and are at the
+                    core of everything we do.
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">International Patients</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Patient Care</a></li>
+                    <li><a href="#">Book an Appointment</a></li>
+                    <li><a href="#">News & Events</a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-3">
+                <h2>Our Specialties</h2>
+                <ul>
+                    <li>Institute of Cardiac Sciences</li>
+                    <li>Emergency Medicine & Critical Care Unit</li>
+                    <li>Obstetrics & Gynecology</li>
+                    <li>Orthopedics</li>
+                    <li>Nephrology</li>
+                    <li>Oncology</li>
+                    <li>Diabetology</li>
+                    <li>Medical Gastroenterology</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <div id="contact">
+                    <h2>Contact Us</h2>
+                    <p><i class="fa-solid fa-phone"></i> Phone: +91 97666 87666 <br/>(For Emergency)</p>
+                    <p><i class="fa-solid fa-phone"></i> Phone: +91 6756893249</p>
+                    <p><i class="fa-regular fa-envelope"></i>Email: info@gkhospital.com</p>
+                </div>
+
+                <div id="connect">
+                    <h2>Connect Us</h2>
+                    <p>Follow us on:</p>
+                    <div class="social-icons">
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2025 GK Hospital</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
