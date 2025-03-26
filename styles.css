@@ -80,16 +80,23 @@ nav div>ul>li:last-child a:hover {
     color:var(--bgcolor) !important;
     border-radius: 10px;
 }
+@media (max-width:1100px){
+    .tog{
+        width:100vw;
+    }
+}
 /*Display section*/
-
+.disp{
+    overflow: hidden;
+    display: flex;
+}
 .display {
-    width:100wh;
-    height:100vh;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    animation:slide 10s ease-in alternate;
+    animation:slide 25s ease-in alternate;
     animation-iteration-count: infinite;
     transition: all 5s;
 }
@@ -102,23 +109,17 @@ nav div>ul>li:last-child a:hover {
 @keyframes slide {
     0%{
         left:00%;
-
     }
-    25%{
-        left:-25%;
-    }
-    50%{
-        left:-50%;
-    }
-    75%{
-        left:-65%;
-    }
+  
     100%{
-        left:-80%;
+        left:-380%;
     }
    
 }
 @media only screen and (max-width:750px){
+    .disp{
+        justify-content: center;
+    }
     .display{
         flex-direction:column;
         animation:none;
@@ -129,6 +130,9 @@ nav div>ul>li:last-child a:hover {
         height:300px;
         overflow: hidden;
     
+    }
+    .display2{
+        display: none;
     }
 }
 
