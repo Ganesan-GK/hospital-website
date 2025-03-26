@@ -87,19 +87,20 @@ nav div>ul>li:last-child a:hover {
 }
 /*Display section*/
 .disp{
-    overflow: hidden;
-    display: flex;
+     overflow: hidden;
+     display: flex;
 }
 .display {
-   
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    animation:slide 25s ease-in alternate;
+    animation:slide 25s linear alternate;
     animation-iteration-count: infinite;
     transition: all 5s;
+   
 }
+
 .display img{
     width:800px;
     height:500px;
@@ -108,14 +109,15 @@ nav div>ul>li:last-child a:hover {
 }
 @keyframes slide {
     0%{
-        left:00%;
-    }
-  
+        left:0%;
+    }    
+    
     100%{
-        left:-380%;
+        left:-220vw;
     }
    
 }
+
 @media only screen and (max-width:750px){
     .disp{
         justify-content: center;
